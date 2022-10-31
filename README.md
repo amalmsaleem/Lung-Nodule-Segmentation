@@ -31,8 +31,11 @@ After properly segmenting the lungs, MIPs of thicknesses 5,10, 15mm were generat
 ![output](https://github.com/amalmsaleem/Lung-Nodule-Segmentation/blob/main/Images/image6.PNG)
 
 
-## Model
+## Segmentation Model
 Hybrid model with 3D CNN top layer and 2D UNET at bottom
+
+## Quantification Model
+For quantification, 2D ROI on a slice are taken from the user. Using this, 3D nodule segmentations along axial, coronal and sagittal axes are obtained using Dual encoder Resnet++ model.
 
 ## Results
 Achieved 73% recall with 2 false positives per scan
